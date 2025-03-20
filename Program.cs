@@ -1,7 +1,13 @@
+using cantina143.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<Contexto>
+   (options => options.UseSqlServer("Data Source=SB-1490652\\SQLSENAI; Initial Catalog = cantina143;Integrated Security = True;TrustServerCertificate = True"));
 
 var app = builder.Build();
 
