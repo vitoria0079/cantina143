@@ -11,6 +11,6 @@ namespace cantina143.Models
         public DbSet<Usuarios> Usuarios { get; set; }
         public DbSet<Clientes> Clientes { get; set; }
         public DbSet<Fornecedores> Fornecedores { get; set; }
-        public DbSet<Alimentos> Alimentos { get; set; }
+        public DbSet<Alimentos> Alimentos { get; set; } //amo minha vida dms
     }
 }
